@@ -10,5 +10,8 @@ entity extend is
 end extend;
 
 architecture synth of extend is
+    signal signExtend : std_logic_vector(15 downto 0);
 begin
+    signExtend <= (others => imm16(15)) when signed = '1' else (others => '0');
+    imm32 <= signExtend & imm16;
 end synth;
