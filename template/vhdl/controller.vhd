@@ -37,7 +37,7 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-    type state_type is (fetch1, fetch2, decode, r_op, store, break, load1, load2, i_op);
+    type state_type is (fetch1, fetch2, decode, r_op, store, break, load1, load2, i_op, branch, call, jmp, ui_op, ri_op);
     signal state, next_state : state_type;
 begin
 
@@ -79,22 +79,14 @@ begin
                 else
                     next_state <= fetch1;
                 end if;
-            when r_op =>
-                next_state <= fetch1;
-            when store =>
-                next_state <= fetch1;
             when break =>
                 next_state <= break;
             when load1 =>
                 next_state <= load2;
-            when load2 =>
-                next_state <= fetch1;
-            when i_op =>
+            when others =>
                 next_state <= fetch1;
         end case;
     end process;
-
-
 
 
     read <= '1' when (state = fetch1) or (state = load1) else '0';
@@ -109,10 +101,10 @@ begin
     write <= '1' when state = store else '0';
 
     --set unused to 0 for now
-    branch_op <= '0';
+    branch_op <= '1' when state = branch else '0;
     pc_add_imm <= '0';
     pc_sel_a <= '0';
-    pc_sel_imm <= '0';
+    pc_sel_imm <= '1' when state = "branch" else '0';
     sel_pc <= '0';
     sel_ra <= '0';
     
