@@ -13,26 +13,16 @@ entity comparator is
     );
 end comparator;
 
-architecture synth of comparator is
-    Signal aSmallerBSigned : std_logic;
-    Signal aSmallerBUnsigned : std_logic;
-    signal aBiggerBSigned : std_logic;
-    signal aBiggerBUnsigned : std_logic ;
-    
+architecture synth of comparator is    
 begin
 
-    aSmallerBSigned <= '1' when  ( (a_31 and not b_31) or ((a_31 xnor b_31) and (diff_31 or zero)) ) else '0';
-    aBiggerBSigned <= '1' when ( (not a_31 and b_31) or ((a_31 xnor b_31) and (not diff_31 and not zero)) ) else '0';
-    aSmallerBUnsigned <= '1' when (not carry or zero) else '0';
-    aBiggerBUnsigned <= '1' when (carry and not zero) else '0';
-
     with op select r <=
-        aSmallerBSigned when "001",
-        aBiggerBSigned when "010",
+        (a_31 and (not b_31)) or ((a_31 xnor b_31) and (diff_31 or zero)) when "001",
+        ((not a_31) and b_31) or ((a_31 xnor b_31) and ((not diff_31) and (not zero))) when "010",
         not (zero) when "011",
         zero when "100",
-        aSmallerBUnsigned when "101",
-        aBiggerBUnsigned when "110",
+        (not carry) or zero when "101",
+        carry and (not zero) when "110",
         zero when others;
 
 end synth;
