@@ -1,0 +1,8 @@
+Time: 107.5 ns Input File Line: 26
+* Error: write = '0' instead of '1'.
+ During STORE, write has to be 1.
+
+Time: 112.5 ns Input File Line: 28
+* Error: rf_wren = '1' instead of '0'.
+ During FETCH, rf_wren has to be 0.
+

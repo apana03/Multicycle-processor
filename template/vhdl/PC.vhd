@@ -17,17 +17,22 @@ entity PC is
 end PC;
 
 architecture synth of PC is
-    signal pc : std_logic_vector(31 downto 0);
+    signal s_curr : std_logic_vector(31 downto 0);
+    signal s_next : std_logic_vector(31 downto 0);
+    signal s_addFour : std_logic_vector(31 downto 0);
 begin
-    process(clk, reset_n)
+    dff :process(clk, reset_n)
     begin
         if reset_n = '0' then
-            pc <= (others => '0');
+            s_curr <= (others => '0');
         elsif rising_edge(clk) then
-            if en = '1' then
-                pc <= std_logic_vector(unsigned(pc) + 4);
-            end if;
+            s_curr <= s_next;
         end if;
-        addr <= pc;
-    end process;
+    end process dff;
+
+
+    s_addFour <= std_logic_vector(signed(s_curr) + 4);
+    s_next <= s_addFour when en = '1' else s_curr;                                                
+    addr <= s_curr;
+
 end synth;
