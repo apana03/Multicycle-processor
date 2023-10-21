@@ -37,9 +37,9 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-    type state_type is (fetch1, fetch2, decode, r_op, store, break, load1, load2, i_op, branch, call, jmp, ui_op, ri_op);
+    type state_type is (fetch1, fetch2, decode, r_op, store, break, load1, load2, i_op, branch, call, callr, jmp, jmpi, ui_op, ri_op);
     signal s_op, s_opx : std_logic_vector(7 downto 0);
-    constant  rtype : std_logic_vector(7 downto 0) := X"3A";
+    constant  r_type : std_logic_vector(7 downto 0) := X"3A";
     signal state, next_state : state_type;
 begin
     -- concatenate op and opx for easier comparison with hex values
@@ -55,7 +55,7 @@ begin
         end if;
     end process;
     
-    process(state, op, opx)
+    process(state, s_opx, s_op)
     begin
         next_state <= state;
         case state is
@@ -65,24 +65,32 @@ begin
                 next_state <= decode;
             when decode =>
                 --  check if op = 0x3A
-                if op = "111010" then
+                if s_op = r_type then
                     -- check if opx = 0x34
-                    if opx = "110100" then
+                    if s_opx = X"34" then
                         next_state <= break;
+                    elsif s_opx = X"1D" then
+                        next_state <= callr;
+                    elsif (s_opx = X"0D") or (s_opx = X"05") then
+                        next_state <= jmp;
                     else
                         next_state <= r_op;
                     end if;
                 -- check if op = 0x04
-                elsif op = "000100" then
+                elsif s_op = X"04" then
                     next_state <= i_op;
                 -- check if op = 0x17
-                elsif op = "010111" then
+                elsif op = X"17" then
                     next_state <= load1;
                 -- check if op = 0x15
-                elsif op = "010101" then
+                elsif op = X"15" then
                     next_state <= load1;
                 elsif (s_op = X"36") or (s_op = X"26") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"0E") or (s_op = X"06") or (s_op = X"2E") then
                     next_state <= branch;
+                elsif (s_op = X"00") then
+                    next_state <= call;
+                elsif (s_op = X"01") then
+                    next_state <= jmpi;
                 else
                     next_state <= fetch1;
                 end if;
@@ -97,12 +105,12 @@ begin
 
 
     read <= '1' when (state = fetch1) or (state = load1) else '0';
-    pc_en <= '1' when state = fetch2 else '0';
+    pc_en <= '1' when (state = fetch2) or (state = call) or (state = callr) or (state = jmp) or (state = jmpi) else '0';
     ir_en <= '1' when state = fetch2 else'0' ;
-    rf_wren <= '1' when (state = i_op) or (state = r_op) or (state = load2) else '0';
+    rf_wren <= '1' when (state = i_op) or (state = r_op) or (state = load2) or (state = call) or (state = callr) else '0';
     imm_signed <= '1' when (state = i_op) or (state = load1) else '0';
     sel_rC <= '1' when state = r_op else '0';
-    sel_b <= '1' when (state = r_op) or (state = store) else '0';
+    sel_b <= '1' when (state = r_op) or (state = store) or (state = branch) else '0';
     sel_addr <= '1' when (state = load1) or (state = store) else '0';
     sel_mem <= '1' when state = load2 else '0';
     write <= '1' when state = store else '0';
@@ -110,26 +118,34 @@ begin
     --set unused to 0 for now
     branch_op <= '1' when state = branch else '0';
     pc_add_imm <= '1' when state = branch else '0';
-    pc_sel_a <= '1' when (state = call and s_op = rtype) or (state = jmp and s_op = rtype) else '0';
-    pc_sel_imm <= '1' when (state = call and s_op = X"00") or (state = jmp and s_op = X"00") else '0';
-    sel_pc <= '1' when state = call else '0';
-    sel_ra <= '1' when state = call else '0';
+    pc_sel_a <= '1' when (callr) or (state = jmp) else '0';
+    pc_sel_imm <= '1' when (state = call) or (state = jmpi) else '0';
+    sel_pc <= '1' when (state = call) or (state = callr) else '0';
+    sel_ra <= '1' when (state = call) or (state = callr) else '0';
     
-    process(op, opx)
+    process(s_op, s_opx , op, opx)
     begin
         -- check if R-Type  
-        if op = "111010" then
-            -- check for "and" instruction
-            if opx = "001110" then
-                op_alu <= "100001";
-            -- check for "shift right logical" instruction
-            elsif opx = "011011" then
-                op_alu <= "110011";
-            end if;
-        -- check if I-Type
-        elsif op = "000100" then
-            -- for now just do addition for I-Type
-            op_alu <= "000000";
+        if s_op = r_type then
+            op_alu(2 downto 0) <= s_opx(5 downto 3);
+        -- check this later
+        elsif s_op = X"06" then 
+            op_alu(2 downto 0) <= "100";
+        -- if I-Type
+        else 
+            op_alu(2 downto 0) <= s_op(5 downto 3);
+        end if;
+
+        if s_opx = X"0E" then
+            op_alu(5 downto 3) <= "100";
+        elsif s_opx = X"1B" then
+            op_alu(5 downto 3) <= "110";
+        elsif s_op = X"04" or X"17" or X"15" then
+            op_alu(5 downto 3) <= "000";
+        elsif (s_op = X"0E") or (s_op = X"16") or  or (s_op = X"26") or (s_op = X"2E") or (s_op = X"36") then
+            op_alu(5 downto 3) <= "011";
+        elsif X"16" then
+            op_alu(5 downto 3) <= "011";
         end if;
     end process;
 
