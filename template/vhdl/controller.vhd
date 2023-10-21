@@ -38,8 +38,13 @@ end controller;
 
 architecture synth of controller is
     type state_type is (fetch1, fetch2, decode, r_op, store, break, load1, load2, i_op, branch, call, jmp, ui_op, ri_op);
+    signal s_op, s_opx : std_logic_vector(7 downto 0);
+    constant  rtype : std_logic_vector(7 downto 0) := X"3A";
     signal state, next_state : state_type;
 begin
+
+    s_op <= "00" & op;
+    s_opx <= "00" & opx;
 
     process(clk , reset_n)
     begin
@@ -101,12 +106,12 @@ begin
     write <= '1' when state = store else '0';
 
     --set unused to 0 for now
-    branch_op <= '1' when state = branch else '0;
-    pc_add_imm <= '0';
-    pc_sel_a <= '0';
-    pc_sel_imm <= '1' when state = "branch" else '0';
-    sel_pc <= '0';
-    sel_ra <= '0';
+    branch_op <= '1' when state = branch else '0';
+    pc_add_imm <= '1' when state = branch else '0';
+    pc_sel_a <= '1' when (state = call and s_op = rtype) or (state = jmp and s_op = rtype) else '0';
+    pc_sel_imm <= '1' when (state = call and s_op = X"00") or (state = jmp and s_op = X"00") else '0';
+    sel_pc <= '1' when state = call else '0';
+    sel_ra <= '1' when state = call else '0';
     
     process(op, opx)
     begin
