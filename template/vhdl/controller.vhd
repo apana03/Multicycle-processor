@@ -42,7 +42,7 @@ architecture synth of controller is
     constant  rtype : std_logic_vector(7 downto 0) := X"3A";
     signal state, next_state : state_type;
 begin
-
+    -- concatenate op and opx for easier comparison with hex values
     s_op <= "00" & op;
     s_opx <= "00" & opx;
 
@@ -81,6 +81,8 @@ begin
                 -- check if op = 0x15
                 elsif op = "010101" then
                     next_state <= load1;
+                elsif (s_op = X"36") or (s_op = X"26") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"0E") or (s_op = X"06") or (s_op = X"2E") then
+                    next_state <= branch;
                 else
                     next_state <= fetch1;
                 end if;
