@@ -118,7 +118,7 @@ begin
     --set unused to 0 for now
     branch_op <= '1' when state = branch else '0';
     pc_add_imm <= '1' when state = branch else '0';
-    pc_sel_a <= '1' when (callr) or (state = jmp) else '0';
+    pc_sel_a <= '1' when (state = callr) or (state = jmp) else '0';
     pc_sel_imm <= '1' when (state = call) or (state = jmpi) else '0';
     sel_pc <= '1' when (state = call) or (state = callr) else '0';
     sel_ra <= '1' when (state = call) or (state = callr) else '0';
@@ -140,11 +140,9 @@ begin
             op_alu(5 downto 3) <= "100";
         elsif s_opx = X"1B" then
             op_alu(5 downto 3) <= "110";
-        elsif s_op = X"04" or X"17" or X"15" then
+        elsif (s_op = X"04") or (s_op = X"17") or (s_op = X"15") then
             op_alu(5 downto 3) <= "000";
-        elsif (s_op = X"0E") or (s_op = X"16") or  or (s_op = X"26") or (s_op = X"2E") or (s_op = X"36") then
-            op_alu(5 downto 3) <= "011";
-        elsif X"16" then
+        elsif (s_op = X"0E") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"26") or (s_op = X"2E") or (s_op = X"36") then
             op_alu(5 downto 3) <= "011";
         end if;
     end process;
