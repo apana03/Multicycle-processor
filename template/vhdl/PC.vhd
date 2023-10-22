@@ -19,7 +19,7 @@ end PC;
 architecture synth of PC is
     signal s_curr : std_logic_vector(31 downto 0);
     signal s_next : std_logic_vector(31 downto 0);
-    signal s_addFour : std_logic_vector(31 downto 0);
+    signal s_PC_Plus_Four : std_logic_vector(31 downto 0);
     signal s_add_imm : std_logic_vector(31 downto 0);
     signal s_sel_a : std_logic_vector(31 downto 0);
     signal s_sel_imm : std_logic_vector(31 downto 0);
@@ -35,14 +35,18 @@ begin
     end process dff;
 
 
-    s_addFour <= std_logic_vector(signed(s_curr) + 4);
+    s_PC_Plus_Four <= std_logic_vector(signed(s_curr) + 4);
     s_add_imm <= std_logic_vector(signed(s_curr) + signed(imm));
-    s_sel_a <= (15 downto 0 =>'0') &( a(15 downto 2)) & "00";
+    s_sel_a <= (15 downto 0 =>'0') & ( a(15 downto 2)) & "00";
     s_sel_imm <= (15 downto 0 =>'0') & (imm(13 downto 0)) & "00";
+
+    --select next address in memory according to control signals
     s_next <= s_sel_a when sel_a = '1' else
               s_add_imm when add_imm = '1' else
               s_sel_imm when sel_imm = '1' else
-              s_addFour; 
+              s_PC_Plus_Four; 
+    
+    -- connect  to output
     addr <= s_curr;
 
 end synth;
