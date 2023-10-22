@@ -1,8 +1,48 @@
-Time: 107.5 ns Input File Line: 26
-* Error: write = '0' instead of '1'.
- During STORE, write has to be 1.
+Time: 82.5 ns Input File Line: 23
+* Error: sel_addr = '0' instead of '1'.
+ During LOAD1, sel_addr has to be 1.
 
-Time: 112.5 ns Input File Line: 28
+Time: 82.5 ns Input File Line: 23
+* Error: imm_signed = '0' instead of '1'.
+ During LOAD1, imm_signed has to be 1.
+
+Time: 87.5 ns Input File Line: 24
+* Error: pc_en = '1' instead of '0'.
+ During LOAD2, pc_en has to be 0.
+
+Time: 87.5 ns Input File Line: 24
+* Error: ir_en = '1' instead of '0'.
+ During LOAD2, ir_en has to be 0.
+
+Time: 87.5 ns Input File Line: 24
+* Error: sel_mem = '0' instead of '1'.
+ During LOAD2, sel_mem has to be 1.
+
+Time: 87.5 ns Input File Line: 24
+* Error: rf_wren = '0' instead of '1'.
+ During LOAD2, rf_wren has to be 1.
+
+Time: 97.5 ns Input File Line: 27
 * Error: rf_wren = '1' instead of '0'.
  During FETCH, rf_wren has to be 0.
+
+Time: 97.5 ns Input File Line: 27
+* Error: pc_sel_imm = '1' instead of '0'.
+ Before the Execute states, PC must be incremented of 4.
+
+Time: 112.5 ns Input File Line: 28
+* Error: PC enable count = 2 instead of 1.
+ Before the Execute states, the PC must be enabled only once.
+
+Time: 117.5 ns Input File Line: 29
+* Error: sel_addr = '0' instead of '1'.
+ During STORE, sel_addr has to be 1.
+
+Time: 117.5 ns Input File Line: 29
+* Error: imm_signed = '0' instead of '1'.
+ During STORE, imm_signed has to be 1.
+
+Time: 117.5 ns Input File Line: 29
+* Error: write = '0' instead of '1'.
+ During STORE, write has to be 1.
 

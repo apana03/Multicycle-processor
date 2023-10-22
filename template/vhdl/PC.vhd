@@ -35,13 +35,13 @@ begin
     end process dff;
 
 
-    s_addFour <= std_logic_vector(signed(s_curr) + signed(4, 32));
-    s_add_imm <= std_logic_vector(signed(s_curr) + signed(imm, 32));
+    s_addFour <= std_logic_vector(signed(s_curr) + 4);
+    s_add_imm <= std_logic_vector(signed(s_curr) + signed(imm));
     s_sel_a <= (15 downto 0 =>'0') &( a(15 downto 2)) & "00";
     s_sel_imm <= (15 downto 0 =>'0') & (imm(13 downto 0)) & "00";
-    s_next <= s_sel_a when sel_a = 1 else
-              s_add_imm when add_imm = 1 else
-              s_sel_imm when sel_imm = 1 else
+    s_next <= s_sel_a when sel_a = '1' else
+              s_add_imm when add_imm = '1' else
+              s_sel_imm when sel_imm = '1' else
               s_addFour; 
     addr <= s_curr;
 
