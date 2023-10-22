@@ -36,7 +36,7 @@ begin
 
 
     s_PC_Plus_Four <= std_logic_vector(signed(s_curr) + 4);
-    s_add_imm <= std_logic_vector(signed(s_curr) + signed(imm));
+    s_add_imm <= std_logic_vector(signed(s_curr) + signed((15 downto 0 => imm(15)) & imm));
     s_sel_a <= (15 downto 0 =>'0') & ( a(15 downto 2)) & "00";
     s_sel_imm <= (15 downto 0 =>'0') & (imm(13 downto 0)) & "00";
 
@@ -47,6 +47,6 @@ begin
               s_PC_Plus_Four; 
     
     -- connect  to output
-    addr <= s_curr;
+    addr <= (15 downto 0 => '0') & s_curr(15 downto 0);
 
 end synth;

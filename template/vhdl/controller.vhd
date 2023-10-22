@@ -86,11 +86,11 @@ begin
                 elsif (s_op = X"0C") or (s_op = X"14") or (s_op = X"1C") or (s_op = X"28") or (s_op = X"30") then
                     next_state <= i_op_imm;
                 -- check if op = 0x17
-                elsif op = X"17" then
+                elsif s_op = X"17" then
                     next_state <= load1;
                 -- check if op = 0x15
-                elsif op = X"15" then
-                    next_state <= load1;
+                elsif s_op = X"15" then
+                    next_state <= store;
                 elsif (s_op = X"36") or (s_op = X"26") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"0E") or (s_op = X"06") or (s_op = X"2E") then
                     next_state <= branch;
                 elsif (s_op = X"00") then
@@ -114,9 +114,9 @@ begin
     pc_en <= '1' when (state = fetch2) or (state = call) or (state = callr) or (state = jmp) or (state = jmpi) else '0';
     ir_en <= '1' when state = fetch2 else'0' ;
     rf_wren <= '1' when (state = i_op) or (state = r_op) or (state = load2) or (state = call) or (state = callr) or (state = i_op_imm) or (state = r_op_small_imm) else '0';
-    imm_signed <= '1' when (state = i_op) or (state = load1) else '0';
+    imm_signed <= '1' when (state = i_op) or (state = load1) or (state = store) else '0';
     sel_rC <= '1' when (state = r_op) or (state = r_op_small_imm) else '0';
-    sel_b <= '1' when (state = r_op) or (state = store) or (state = branch) else '0';
+    sel_b <= '1' when (state = r_op) or (state = branch) else '0';
     sel_addr <= '1' when (state = load1) or (state = store) else '0';
     sel_mem <= '1' when state = load2 else '0';
     write <= '1' when state = store else '0';
@@ -127,32 +127,26 @@ begin
     sel_pc <= '1' when (state = call) or (state = callr) else '0';
     sel_ra <= '1' when (state = call) or (state = callr) else '0';
     
+    -- check if it's the no condition branch instruction
+    -- check if R-Type then map 3 MSB from opx to 3 LSB of op_alu
+    -- if I-Type then map 3 MSB from op to 3 LSB of op_alu
+    op_alu(2 downto 0) <= "100" when s_op = X"06" else s_opx(5 downto 3) when s_op = r_type else s_op(5 downto 3);
 
     -- asynch process to set alu op according to instruction
-    process(s_op, s_opx )
+    process(s_op, s_opx)
     begin
-        -- check if R-Type then map 3 MSB from opx to 3 LSB of op_alu
-        if s_op = r_type then
-            op_alu(2 downto 0) <= s_opx(5 downto 3);
-        -- check this later
-        elsif s_op = X"06" then 
-            op_alu(2 downto 0) <= "100";
-        -- if I-Type then map 3 MSB from op to 3 LSB of op_alu
-        else 
-            op_alu(2 downto 0) <= s_op(5 downto 3);
-        end if;
-        
-        -- check if logical operation is needed
-        if (s_opx = X"1E") or (s_opx = X"16") or (s_opx = X"16") or (s_opx = X"06") or (s_opx = X"0E") or (s_op = X"0C") or (s_op = X"14") or (s_op = X"1C") then
-            op_alu(5 downto 3) <= "100";
-        elsif   (s_opx = X"02") or (s_opx = X"3A") or (s_opx = X"1A") or (s_opx = X"12") or (s_opx = X"0B") or (s_opx = X"03") or (s_opx = X"3B") or (s_opx = X"1B") or (s_opx = X"13") or (s_opx = X"1B") then
-            op_alu(5 downto 3) <= "110";
-        elsif  (s_opx = X"31") or (s_op = X"04") or (s_op = X"17") or (s_op = X"15") or (s_op = X"04") then
+        if  (s_opx = X"31") or (s_op = X"04") or (s_op = X"17") or (s_op = X"15") then
             op_alu(5 downto 3) <= "000";
         elsif (s_opx = X"39") then
             op_alu(5 downto 3) <= "001";
-        elsif (s_opx = X"30") or (s_opx = X"28") or (s_opx = X"20") or (s_opx = X"18") or (s_opx = X"10") or (s_opx = X"08") or (s_op = X"0E") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"26") or (s_op = X"2E") or (s_op = X"36") or (s_op = X"08") or (s_op = X"10") or (s_op = X"18") or (s_op = X"20") or (s_op = X"28") or (s_op = X"30") then
+        elsif (s_op = X"06") or (s_opx = X"30") or (s_opx = X"28") or (s_opx = X"20") or (s_opx = X"18") or (s_opx = X"10") or (s_opx = X"08") or (s_op = X"0E") or (s_op = X"16") or (s_op = X"1E") or (s_op = X"26") or (s_op = X"2E") or (s_op = X"36") or (s_op = X"08") or (s_op = X"10") or (s_op = X"18") or (s_op = X"20") or (s_op = X"28") or (s_op = X"30") then
             op_alu(5 downto 3) <= "011";
+        elsif (s_opx = X"1E") or (s_opx = X"16") or (s_opx = X"06") or (s_opx = X"0E") or (s_op = X"0C") or (s_op = X"14") or (s_op = X"1C") then
+            op_alu(5 downto 3) <= "100";
+        else
+            -- other case equivaklent to the following expression
+            --(s_opx = X"02") or (s_opx = X"3A") or (s_opx = X"1A") or (s_opx = X"12") or (s_opx = X"0B") or (s_opx = X"03") or (s_opx = X"3B") or (s_opx = X"13") or (s_opx = X"1B")
+            op_alu(5 downto 3) <= "110";
         end if;
     end process;
 

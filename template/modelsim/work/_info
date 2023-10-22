@@ -22,9 +22,9 @@ V207_zj^V^3XmVFBkYPT0^3
 !s100 Ho^oT``GLJUNf<W@=D9Un1
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1697972442
+Z8 !s110 1698004401
 !i10b 1
-Z9 !s108 1697972442.000000
+Z9 !s108 1698004401.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/add_sub.vhd|
 Z11 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/add_sub.vhd|
 !i113 1
@@ -62,11 +62,11 @@ VLIV0?b]kCZ40<iPbTC=4:2
 !s100 O`l`Xc5c_V9`dzon<W_fQ2
 R7
 32
-R8
+Z17 !s110 1698004402
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ALU.vhd|
-Z18 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ALU.vhd|
+Z18 !s108 1698004402.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ALU.vhd|
+Z20 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ALU.vhd|
 !i113 1
 R12
 R13
@@ -80,33 +80,33 @@ Vn7Jhlm<g3=Igo4gAY0?Z=3
 !s100 ao^@A8=RSg[FW?jY:[EXI0
 R7
 32
-R8
-!i10b 1
-R9
 R17
+!i10b 1
 R18
+R19
+R20
 !i113 1
 R12
 R13
 Ebuttons
-Z19 w1696255650
+Z21 w1696255650
 R1
 R2
 R3
 R4
-Z20 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd
-Z21 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd
+Z22 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd
+Z23 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd
 l0
 L5
 V6nKA>6XmzI`j>a@n4^6Pn2
 !s100 =22bV77NIHzbkEY31]2hQ2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd|
-Z23 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd|
+R18
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd|
+Z25 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/buttons.vhd|
 !i113 1
 R12
 R13
@@ -121,22 +121,22 @@ Vz=5DD3`[2T_e1Tj`RUBgR3
 !s100 l:Q7JXKFoP5Z9FQDUXG9]3
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R22
-R23
+R18
+R24
+R25
 !i113 1
 R12
 R13
 Pcheck_functions
-Z24 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z26 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R2
 R3
-R19
+R21
 R4
-Z25 8../testbench/check_functions.vhd
-Z26 F../testbench/check_functions.vhd
+Z27 8../testbench/check_functions.vhd
+Z28 F../testbench/check_functions.vhd
 l0
 L6
 V6aLKC8M`WFbUTzDPW6He83
@@ -144,17 +144,17 @@ V6aLKC8M`WFbUTzDPW6He83
 R7
 31
 b1
-Z27 !s110 1697972452
+Z29 !s110 1698004451
 !i10b 1
-Z28 !s108 1697972452.000000
-Z29 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
-Z30 !s107 ../testbench/check_functions.vhd|
+Z30 !s108 1698004451.000000
+Z31 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
+Z32 !s107 ../testbench/check_functions.vhd|
 !i113 1
 o-93
 R13
 Bbody
-Z31 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
-R24
+Z33 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
+R26
 R2
 R3
 l0
@@ -163,32 +163,32 @@ Vl_?7YlfeIC=0oLhh:^F<e2
 !s100 ]Ul<gd[SNh_SV]VQVO[::0
 R7
 31
-R27
-!i10b 1
-R28
 R29
+!i10b 1
 R30
+R31
+R32
 !i113 1
 o-93
 R13
 Ecomparator
-Z32 w1697811644
+Z34 w1697811644
 R2
 R3
 R4
-Z33 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd
-Z34 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd
+Z35 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd
+Z36 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd
 l0
 L4
 V3WXakLjKGIMC9fTC_zAJG3
 !s100 XTWoF>RX1>LcmLLBBo;N:0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd|
-Z36 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd|
+R18
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd|
+Z38 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/comparator.vhd|
 !i113 1
 R12
 R13
@@ -202,32 +202,32 @@ VU2DHiiU7VOQIkOoOATPnM3
 !s100 ^I<D]OojeK7IJ00JY4WlF0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R35
-R36
+R18
+R37
+R38
 !i113 1
 R12
 R13
 Econtroller
-Z37 w1697972431
+Z39 w1698004396
 R2
 R3
 R4
-Z38 8../vhdl/controller.vhd
-Z39 F../vhdl/controller.vhd
+Z40 8../vhdl/controller.vhd
+Z41 F../vhdl/controller.vhd
 l0
 L4
 V>:mGA0fg1bnEUkAc9L0EZ3
 !s100 iLCb?>B5ja1L5iDVmAU]]0
 R7
 31
-R27
+Z42 !s110 1698004432
 !i10b 1
-R28
-Z40 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
-Z41 !s107 ../vhdl/controller.vhd|
+Z43 !s108 1698004432.000000
+Z44 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
+Z45 !s107 ../vhdl/controller.vhd|
 !i113 1
 o-93
 R13
@@ -237,36 +237,36 @@ R3
 DEx4 work 10 controller 0 22 >:mGA0fg1bnEUkAc9L0EZ3
 l44
 L39
-Vk^ddgGlnGFZ8A`NhAi`0z0
-!s100 m7Hb3DOR_HoZZ4zZNATSn1
+VM]m7;WFZjSjBPT<;>Thg71
+!s100 O9dIUFk]j3GboKFTeh=;^0
 R7
 31
-R27
+R42
 !i10b 1
-R28
-R40
-R41
+R43
+R44
+R45
 !i113 1
 o-93
 R13
 Ecpu
-R19
+R21
 R2
 R3
 R4
-Z42 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd
-Z43 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd
+Z46 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd
+Z47 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd
 l0
 L24
 VoN1Z@H62cOJ8j76FSZXfk0
 !s100 ?^3E^YkUK_jO8j=PLQg0X0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd|
-Z45 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd|
+R18
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd|
+Z49 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/CPU.vhd|
 !i113 1
 R12
 R13
@@ -280,33 +280,33 @@ VU_VbP>G_0>o[AHnGEJ`7A2
 !s100 nj]fOeJzKgV2QQoiYJ37e2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R44
-R45
+R18
+R48
+R49
 !i113 1
 R12
 R13
 Edecoder
-Z46 w1697391425
+Z50 w1697391425
 R1
 R2
 R3
 R4
-Z47 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd
-Z48 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd
+Z51 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd
+Z52 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd
 l0
 L4
 ViC771:LYUfzfo2OCQ[eG@2
 !s100 U2i`L6[5deJSCBk^LEP3[2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd|
-Z50 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd|
+R18
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd|
+Z54 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/decoder.vhd|
 !i113 1
 R12
 R13
@@ -321,32 +321,32 @@ V^X^XFnBl:iGU<kT;cl]j91
 !s100 3IfBN408Y@FZJQJNkW>Zn2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R49
-R50
+R18
+R53
+R54
 !i113 1
 R12
 R13
 Eextend
-Z51 w1697392021
+Z55 w1697392021
 R2
 R3
 R4
-Z52 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd
-Z53 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd
+Z56 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd
+Z57 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd
 l0
 L4
 VUL_6DHeRdI@k7FglXE4m:2
 !s100 [OER<nle^Gzi[Q]KGKSL33
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd|
-Z55 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd|
+R18
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd|
+Z59 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/extend.vhd|
 !i113 1
 R12
 R13
@@ -360,71 +360,71 @@ VjT8P1AHBQNLe[KEnP5c[G3
 !s100 0;<8D;RN;dM0h37IK2KbR3
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R54
-R55
+R18
+R58
+R59
 !i113 1
 R12
 R13
 Egecko
-R19
+R21
 R2
 R3
 R4
-Z56 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd
-Z57 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd
+Z60 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd
+Z61 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd
 l0
 L25
 VUUo[=d8;JL2NUd?KL5z>W3
 !s100 LSB69=RnS?7B=e740[]>J0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd|
-Z59 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd|
+R18
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd|
+Z63 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R2
 R3
-Z60 DEx4 work 5 gecko 0 22 UUo[=d8;JL2NUd?KL5z>W3
+Z64 DEx4 work 5 gecko 0 22 UUo[=d8;JL2NUd?KL5z>W3
 l122
 L42
 VXW8hfda?:0fgXTELaMc<M2
 !s100 6_aIkK46>FzI3D:<OBG:Z1
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R58
-R59
+R18
+R62
+R63
 !i113 1
 R12
 R13
 Eir
-Z61 w1697393620
+Z65 w1697393620
 R2
 R3
 R4
-Z62 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd
-Z63 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd
+Z66 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd
+Z67 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd
 l0
 L4
 V^D0Sz[@@D76hLF6hc_Qm`1
 !s100 g>VC3<ZiU9SUL1eB^Hc9_3
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd|
-Z65 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd|
+R18
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd|
+Z69 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/IR.vhd|
 !i113 1
 R12
 R13
@@ -438,33 +438,33 @@ Vn>6dPjNgz:1bUS54E4_g;1
 !s100 MPM@c@zTl3C@0i4>Q@;6h0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R64
-R65
+R18
+R68
+R69
 !i113 1
 R12
 R13
 Eleds
-R19
+R21
 R1
 R2
 R3
 R4
-Z66 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd
-Z67 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd
+Z70 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd
+Z71 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd
 l0
 L5
 V82^IRfHNag^>;Yc>Z[nm>3
 !s100 LBhnQz<diU;5h1EbFfFEW1
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd|
-Z69 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd|
+R18
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd|
+Z73 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/LEDs.vhd|
 !i113 1
 R12
 R13
@@ -479,33 +479,33 @@ V]cELLS]GDUdVTSZZ0nkQ`2
 !s100 :XaGV=61A<iIVbj8VQ?BQ0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R68
-R69
+R18
+R72
+R73
 !i113 1
 R12
 R13
 Elogic_unit
-Z70 w1696346026
+Z74 w1696346026
 R1
 R2
 R3
 R4
-Z71 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd
-Z72 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd
+Z75 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd
+Z76 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd
 l0
 L5
 VE^KBjmii;<4J6W7Q3OZgQ0
 !s100 C7>D?kP3HVibnz?O:9zYW0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd|
-Z74 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd|
+R18
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd|
+Z78 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/logic_unit.vhd|
 !i113 1
 R12
 R13
@@ -520,32 +520,32 @@ VOHbSYc37zPKQMDVF1WNgd2
 !s100 ];aHabJRl?`OfM]f0cgNg0
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R73
-R74
+R18
+R77
+R78
 !i113 1
 R12
 R13
 Emultiplexer
-Z75 w1695745022
+Z79 w1695745022
 R2
 R3
 R4
-Z76 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd
-Z77 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd
+Z80 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd
+Z81 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd
 l0
 L4
 V4iH6`nZgBAHVia??bJk>G2
 !s100 UDM^5ga=kb9Z[=K^]bghV0
 R7
 32
-Z78 !s110 1697972443
+R17
 !i10b 1
-Z79 !s108 1697972443.000000
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd|
-Z81 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd|
+R18
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd|
+Z83 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/multiplexer.vhd|
 !i113 1
 R12
 R13
@@ -559,32 +559,32 @@ Vn9nj:^QY46l:0<PMYF?8j1
 !s100 NB8;M:jdz<Zfib@Ufo2zH2
 R7
 32
-R78
+R17
 !i10b 1
-R79
-R80
-R81
+R18
+R82
+R83
 !i113 1
 R12
 R13
 Emux2x16
-Z82 w1697391832
+Z84 w1697391832
 R2
 R3
 R4
-Z83 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd
-Z84 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd
+Z85 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd
+Z86 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd
 l0
 L4
 VaHOL`3MF?g?d`[6<SJm^e1
 !s100 ]AkMHg3_OS9:k6cjVd[b:3
 R7
 32
-R78
+Z87 !s110 1698004403
 !i10b 1
-R79
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd|
-Z86 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd|
+Z88 !s108 1698004403.000000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd|
+Z90 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x16.vhd|
 !i113 1
 R12
 R13
@@ -598,32 +598,32 @@ VEa@4K2S3?O]KSGY^m4e5g1
 !s100 E3aLNPIoR=`f5iP3hz?eS0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R85
-R86
+R88
+R89
+R90
 !i113 1
 R12
 R13
 Emux2x32
-Z87 w1697391841
+Z91 w1697391841
 R2
 R3
 R4
-Z88 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd
-Z89 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd
+Z92 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd
+Z93 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd
 l0
 L4
 V5<9;E?13m3J1aF01KEAAR1
 !s100 Iab^5l@hZCaSi22IEjFiN0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd|
-Z91 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd|
+R88
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd|
+Z95 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x32.vhd|
 !i113 1
 R12
 R13
@@ -637,32 +637,32 @@ V]YT:ST]_Wj4C5SVKj_`hR3
 !s100 ToT4Y7cWj9ED4Y7aJzIY<2
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R90
-R91
+R88
+R94
+R95
 !i113 1
 R12
 R13
 Emux2x5
-Z92 w1697391820
+Z96 w1697391820
 R2
 R3
 R4
-Z93 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
-Z94 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
+Z97 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
+Z98 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
 l0
 L4
 VW@GMgb]B=<MlVOlGRRM2i3
 !s100 A96?gLbg3Wafg>1JToSDm3
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd|
-Z96 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd|
+R18
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd|
+Z100 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd|
 !i113 1
 R12
 R13
@@ -676,23 +676,23 @@ Vm<a3]ZPAOEHVmJiXF5lHK2
 !s100 2RfgIbBIM:C0Jk2SCCBJL0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R95
-R96
+R18
+R99
+R100
 !i113 1
 R12
 R13
 Ppack
-Z97 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z98 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z101 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z102 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
 R3
-R19
+R21
 R4
-Z99 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd
-Z100 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd
+Z103 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd
+Z104 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd
 l0
 L12
 VSgkf7C>zV<_V6E^@jUKD^3
@@ -700,18 +700,18 @@ VSgkf7C>zV<_V6E^@jUKD^3
 R7
 32
 b1
-R78
+R87
 !i10b 1
-R79
-Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd|
-Z102 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd|
+R88
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd|
+Z106 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd|
 !i113 1
 R12
 R13
 Bbody
-Z103 DPx4 work 4 pack 0 22 Sgkf7C>zV<_V6E^@jUKD^3
-R97
-R98
+Z107 DPx4 work 4 pack 0 22 Sgkf7C>zV<_V6E^@jUKD^3
+R101
+R102
 R2
 R3
 l0
@@ -720,74 +720,74 @@ VQ[i6CQaWYOi37nk]<RCBH3
 !s100 8]CiCz8GM]b_8`cfK=T:`2
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R101
-R102
+R88
+R105
+R106
 !i113 1
 R12
 R13
 Epc
-Z104 w1697965602
+Z108 w1698003186
 R1
 R2
 R3
 R4
-Z105 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd
-Z106 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd
+Z109 8../vhdl/PC.vhd
+Z110 F../vhdl/PC.vhd
 l0
 L5
-VL1PS=`^7Dom5JHh`oiS8z0
+VNn?=zTB=WL19i;=KJYcA52
 !s100 Vz;DIYb[AY;g5[laVME<e3
 R7
-32
-R78
+31
+R29
 !i10b 1
-R79
-Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd|
-Z108 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd|
+R30
+Z111 !s90 -reportprogress|300|-93|../vhdl/PC.vhd|
+Z112 !s107 ../vhdl/PC.vhd|
 !i113 1
-R12
+o-93
 R13
 Asynth
 R1
 R2
 R3
-DEx4 work 2 pc 0 22 L1PS=`^7Dom5JHh`oiS8z0
+DEx4 work 2 pc 0 22 Nn?=zTB=WL19i;=KJYcA52
 l27
 L19
-Va<nYj>Re[GK=jT[=D@NaA2
-!s100 6jKhGeZdJ3f0FnnREoED:1
+VhI67^6TAeS2`Z;BR1k=073
+!s100 iY;IYZ1DJa2cTbfO:ILb]2
 R7
-32
-R78
+31
+R29
 !i10b 1
-R79
-R107
-R108
+R30
+R111
+R112
 !i113 1
-R12
+o-93
 R13
 Eram
-Z109 w1696419006
+Z113 w1696419006
 R1
 R2
 R3
 R4
-Z110 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd
-Z111 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd
+Z114 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd
+Z115 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd
 l0
 L5
 VJiWAmLGUWmdVPB8L2QZ[D3
 !s100 9O>00CFElD4PLMkihiTWm3
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd|
-Z113 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd|
+R88
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd|
+Z117 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/RAM.vhd|
 !i113 1
 R12
 R13
@@ -802,33 +802,33 @@ V[l1JQ6`AV^DCfS6MgC>d_1
 !s100 8KJeLIZjD?YlkD7TUZZ9B1
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R112
-R113
+R88
+R116
+R117
 !i113 1
 R12
 R13
 Eregister_file
-Z114 w1696413580
+Z118 w1696413580
 R1
 R2
 R3
 R4
-Z115 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd
-Z116 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd
+Z119 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd
+Z120 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd
 l0
 L5
 VhQYRZ<6ijZW2:hk46k4IZ2
 !s100 _;mToXbZzY:WVO^oMIJ;J3
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd|
-Z118 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd|
+R88
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd|
+Z122 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/register_file.vhd|
 !i113 1
 R12
 R13
@@ -843,42 +843,42 @@ V[0?:HaDkz:_K5hA>E[Tk42
 !s100 2D[2><H;C9FX<mEJYJTh62
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R117
-R118
+R88
+R121
+R122
 !i113 1
 R12
 R13
 Ergb_led96
-R19
-R103
-R98
-R97
+R21
+R107
+R102
+R101
 R2
 R3
 R4
-R99
-R100
+R103
+R104
 l0
 L46
 VDn00^;b6BmV8c[7[]6<CU2
 !s100 X:YKB@hW0<LC:6C595LeJ0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R101
-R102
+R88
+R105
+R106
 !i113 1
 R12
 R13
 Aarch
-R103
-R98
-R97
+R107
+R102
+R101
 R2
 R3
 DEx4 work 9 rgb_led96 0 22 Dn00^;b6BmV8c[7[]6<CU2
@@ -888,38 +888,38 @@ VVMLEXCQSI_@JdCBGa]SIz1
 !s100 g<aGZ1bIK0AWZCQOUK`ba3
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R101
-R102
+R88
+R105
+R106
 !i113 1
 R12
 R13
 Erom
-Z119 w1695825912
+Z123 w1695825912
 R1
 R2
 R3
 R4
-Z120 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd
-Z121 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd
+Z124 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd
+Z125 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd
 l0
 L5
 V;HIY62b?IMTaL7>j?MTM@2
 !s100 ;HJP:4Pf6d9ca=B<]K[Bj1
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd|
-Z123 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd|
+R88
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd|
+Z127 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM.vhd|
 !i113 1
 R12
 R13
 Asynth
-Z124 DEx4 work 9 rom_block 0 22 Cf[gZ]hQBZigaT1P:e9O01
+Z128 DEx4 work 9 rom_block 0 22 Cf[gZ]hQBZigaT1P:e9O01
 R1
 R2
 R3
@@ -930,72 +930,72 @@ V53@3EG[IlZ[X3JIn5g0[A0
 !s100 V_@`_B6`V^l55C@CEi0CM1
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R122
-R123
+R88
+R126
+R127
 !i113 1
 R12
 R13
 Erom_block
-Z125 w1695394710
+Z129 w1695394710
 R2
 R3
 R4
-Z126 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd
-Z127 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd
+Z130 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd
+Z131 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd
 l0
 L42
 VCf[gZ]hQBZigaT1P:e9O01
 !s100 Fb1^C3b1G3KcM]0dFoPHV2
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd|
-Z129 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd|
+R88
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd|
+Z133 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/ROM_Block.vhd|
 !i113 1
 R12
 R13
 Asyn
 R2
 R3
-R124
+R128
 l82
 L52
 VZKBR7P0EaE;PJMf_Ho4411
 !s100 2O9W8o5<`cI7Pb0TBCEoL0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R128
-R129
+R88
+R132
+R133
 !i113 1
 R12
 R13
 Eshift_unit
-R19
+R21
 R1
 R2
 R3
 R4
-Z130 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd
-Z131 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd
+Z134 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd
+Z135 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd
 l0
 L5
 VoYz=ZP:Rg2U9Eb=ZGo>940
 !s100 C4@E7NN0:UB89P^MW405S0
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd|
-Z133 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd|
+R88
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd|
+Z137 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/shift_unit.vhd|
 !i113 1
 R12
 R13
@@ -1010,41 +1010,41 @@ VNOiOnk]_oCJDa8RHk=_0n1
 !s100 dC3RH_ngSNidhYJX18aNc2
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R132
-R133
+R88
+R136
+R137
 !i113 1
 R12
 R13
 Etb_controller
-R19
-R31
-R24
+R21
+R33
+R26
 R1
 R2
 R3
 R4
-Z134 8../testbench/tb_Controller.vhd
-Z135 F../testbench/tb_Controller.vhd
+Z138 8../testbench/tb_Controller.vhd
+Z139 F../testbench/tb_Controller.vhd
 l0
 L9
 V3E@KN_PfWzKDMi@e_IcgN1
 !s100 QPYMI?@zF<fA]gVd9c[kS0
 R7
 31
-R27
+R42
 !i10b 1
-R28
-Z136 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
-Z137 !s107 ../testbench/tb_Controller.vhd|
+R43
+Z140 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
+Z141 !s107 ../testbench/tb_Controller.vhd|
 !i113 1
 o-93
 R13
 Atestbench
-R31
-R24
+R33
+R26
 R1
 R2
 R3
@@ -1052,43 +1052,43 @@ DEx4 work 13 tb_controller 0 22 3E@KN_PfWzKDMi@e_IcgN1
 l102
 L15
 V3M1BHZOYlAHk5ZM;AdXib3
-Z138 !s100 _WkzDDFBPd:3LHMWS[AoW2
+!s100 _WkzDDFBPd:3LHMWS[AoW2
 R7
 31
-R27
+R42
 !i10b 1
-R28
-R136
-R137
+R43
+R140
+R141
 !i113 1
 o-93
 R13
 Etb_extend
-R19
-R31
-R24
+R21
+R33
+R26
 R2
 R3
 R4
-Z139 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd
-Z140 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd
+Z142 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd
+Z143 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd
 l0
 L8
 Vaaa357Ec4Z]hSVLzLa]`V0
 !s100 bW1ZJ800R3O0<C<7nO4h:1
 R7
 32
-R78
+R87
 !i10b 1
-R79
-Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd|
-Z142 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd|
+R88
+Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd|
+Z145 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_Extend.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R31
-R24
+R33
+R26
 R2
 R3
 DEx4 work 9 tb_extend 0 22 aaa357Ec4Z]hSVLzLa]`V0
@@ -1098,37 +1098,37 @@ VSUC:NKCMTg8:IYKgIcGd30
 !s100 f><EEJh?:BbXgSC^g?0XG2
 R7
 32
-R78
+R87
 !i10b 1
-R79
-R141
-R142
+R88
+R144
+R145
 !i113 1
 R12
 R13
 Etb_gecko
-R19
+R21
 R2
 R3
 R4
-Z143 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd
-Z144 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd
+Z146 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd
+Z147 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd
 l0
 L4
 V5Tbz7Kl=147iIIz>>A8Y[3
 !s100 M92[;29_Yc:FoKCCIgj]?0
 R7
 32
-Z145 !s110 1697972444
+R87
 !i10b 1
-Z146 !s108 1697972444.000000
-Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd|
-Z148 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd|
+R88
+Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd|
+Z149 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_GECKO.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R60
+R64
 R2
 R3
 DEx4 work 8 tb_gecko 0 22 5Tbz7Kl=147iIIz>>A8Y[3
@@ -1138,40 +1138,40 @@ V6fQEk`>ELI8^:O]bcf[0k0
 !s100 1395I=^FjK==Lo:2:Ck6c3
 R7
 32
-R145
+R87
 !i10b 1
-R146
-R147
+R88
 R148
+R149
 !i113 1
 R12
 R13
 Etb_ir
-R19
-R31
-R24
+R21
+R33
+R26
 R2
 R3
 R4
-Z149 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd
-Z150 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd
+Z150 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd
+Z151 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd
 l0
 L8
 VNa]DdS==`51QO9@9@NCYO3
 !s100 dO7:P:CO76Dg9T_Q>3Mi:2
 R7
 32
-R145
+R87
 !i10b 1
-R146
-Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd|
-Z152 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd|
+R88
+Z152 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd|
+Z153 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_IR.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R31
-R24
+R33
+R26
 R2
 R3
 DEx4 work 5 tb_ir 0 22 Na]DdS==`51QO9@9@NCYO3
@@ -1181,54 +1181,54 @@ VFC]h]m]T]Ph2`Z>Ki^a?Z2
 !s100 g?YUbkdlEmZ2JbBY[dbba0
 R7
 32
-R145
+R87
 !i10b 1
-R146
-R151
+R88
 R152
+R153
 !i113 1
 R12
 R13
 Etb_pc
-R19
-R31
-R24
+R21
+R33
+R26
 R2
 R3
 R4
-Z153 8C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_PC.vhd
-Z154 FC:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_PC.vhd
+Z154 8../testbench/tb_PC.vhd
+Z155 F../testbench/tb_PC.vhd
 l0
 L8
-VZbiH9]DK4fmMF;^e8W7zF1
+V2P^Ye]=DcVobhf_EG_H431
 !s100 _Sjg^6a@flK7I1KVlG]Sm2
 R7
-32
-R145
+31
+Z156 !s110 1698004452
 !i10b 1
-R146
-Z155 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_PC.vhd|
-Z156 !s107 C:/Users/Andrei/Multicycle-Nios-II-processor/template/testbench/tb_PC.vhd|
+R30
+Z157 !s90 -reportprogress|300|-93|../testbench/tb_PC.vhd|
+Z158 !s107 ../testbench/tb_PC.vhd|
 !i113 1
-R12
+o-93
 R13
 Atestbench
-R31
-R24
+R33
+R26
 R2
 R3
-DEx4 work 5 tb_pc 0 22 ZbiH9]DK4fmMF;^e8W7zF1
+DEx4 work 5 tb_pc 0 22 2P^Ye]=DcVobhf_EG_H431
 l42
 L11
-V;4TRg:;B=`LN4JkHFOfZH3
-!s100 gKH@n?YGO`P>Bz<MRbX@K0
+Vf5G`eZIn6KizE:]=3UeFm0
+Z159 !s100 gKH@n?YGO`P>Bz<MRbX@K0
 R7
-32
-R145
-!i10b 1
-R146
-R155
+31
 R156
+!i10b 1
+R30
+R157
+R158
 !i113 1
-R12
+o-93
 R13
