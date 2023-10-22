@@ -107,14 +107,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity extend
 -- Compiling architecture synth of extend
 
-} {} {}} C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity mux2x5
--- Compiling architecture synth of mux2x5
-
 } {} {}} C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/GECKO.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -130,6 +122,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity mux2x32
 -- Compiling architecture synth of mux2x32
+
+} {} {}} C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/mux2x5.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x5
+-- Compiling architecture synth of mux2x5
 
 } {} {}} C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/PC.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -163,8 +163,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity controller
 -- Compiling architecture synth of controller
-** Warning: C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/controller.vhd(83): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 6 is not equal to right length 8).
-** Warning: C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/controller.vhd(86): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 6 is not equal to right length 8).
+** Warning: C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/controller.vhd(89): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 6 is not equal to right length 8).
+** Warning: C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/controller.vhd(92): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 6 is not equal to right length 8).
 
 } {} {}} C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Andrei/Multicycle-Nios-II-processor/template/vhdl/rgb_led96.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
